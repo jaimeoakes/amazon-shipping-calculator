@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="amazon-shipping-calculator.css">
+  <title>Amazon Shipping</title>
+  </head>
+
+    <body>
+
+      <p>Amazon Shipping Calculator</p>
+
+      <input class="js-cost-input cost-input" placeholder="Cost of order" onkeydown="onKeyDown(event)">
+
+      <!-- console.log(event.key) -->
+      
+      <button onclick="calculateTotal()" class="calculate-button">Calculate</button>
+
+      <p class="js-total-cost"></p>
+
+      <!-- Create an element to display the error message. -->
+      <p class="js-error-message error-message"></p>
+
+      <script src="amazon-shipping-calculator.js"> </script>
+    </body>
+</html>
